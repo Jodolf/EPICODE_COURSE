@@ -1,0 +1,67 @@
+
+div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+width: 250px;
+margin: 5px;
+border-radius: 1rem;
+border-color: blue;
+}
+
+input::placeholder{
+    padding-left: 0.5rem;
+    color: rgb(117, 165, 199);
+}
+
+input[type=text]{
+    padding-left: 1rem;
+    color: blue;
+}
+    
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0px;
+    outline: none;
+    }
+    
+button{
+    border-radius: 1rem;
+    border-color: blue;
+    color: rgb(117, 165, 199);
+}
+
+button:active{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: blue;
+}
+
+  li{
+    font-weight: bold;
+    font-size: xx-large;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+#searchResults{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

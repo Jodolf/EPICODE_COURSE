@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+
+    <title>Gatti Rotanti</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Cazzo fanno i gatti</h1>
+        <button id="cat-fact">Genera</button>
+        <p id="fact"></p>
+    </div>
+
+    <script>
+        const factElement = document.getElementById("fact")
+        const bottone = document.getElementById("cat-fact") 
+
+        bottone.addEventListener('click', () => {
+            fetch("https://catfact.ninja/fact")
+            .then(response => response.json())
+            .then(data => {
+                factElement.textContent = data.fact;
+            })
+            .catch(error => {
+                factElement.textContent = "Errore"
+                console.error("Errore", error)
+            })
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body {
+    background-color: black;
+    color: white;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px
+}
+
+button{
+    background-color: lime;
+    border: 5px solid orange;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-weight: 400;
+    margin: 30px;
+}
+
+#fact{
+    text-align: center;
+}

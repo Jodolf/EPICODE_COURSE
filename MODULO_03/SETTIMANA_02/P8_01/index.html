@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        section {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .music-card {
+            width: 18rem;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .music-card-title {
+            font-weight: bolder;
+            font-size: xx-large;
+            padding-top: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+
+
+        .music-card-text {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            justify-content: space-around;
+        }
+
+        .gender {
+            color: rgb(218, 97, 97);
+        }
+
+        .album-container {
+            text-align: center;
+        }
+
+        .best-album-card-title {
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-size: 5rem;
+            color: rgb(218, 97, 97);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgb(255, 230, 230); font-size: large;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#favourites">Favourites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#best-albums">Best albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wall-of-shame">Wall of shame</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="favourites">
+        <div class="container collapse show">
+            <div class="row py-5">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Massive Attack <span class="gender">Trip Hop</span></p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Massive Attack <span class="gender">Trip Hop</span></p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Massive Attack <span class="gender">Trip Hop</span></p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Massive Attack <span class="gender">Trip Hop</span></p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Massive Attack <span class="gender">Trip Hop</span></p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Massive Attack <span class="gender">Trip Hop</span></p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Massive Attack <span class="gender">Trip Hop</span></p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="album-container">
+                        <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Massive Attack <span class="gender">Trip Hop</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="best-albums">
+        <div class="container collapse show py-5">
+
+            <div class="row">
+
+                <div class="col-12 col-md-6 d-md-flex flex-md-row">
+                    <img src="assets/mezzanine.jpg" alt="Mezzanine" class="img-fluid">
+
+                    <div class="col-12 collapse show">
+                        <div class="d-flex flex-column justify-content-center h-100 p-4">
+                        <h4 class="best-album-card-title">Mezzanine</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                            in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="wall-of-shame">
+        <div class="container collapse show"></div>
+        <div class="row justify-content-center">
+            <h1 class="text-center py-5">Wall of Shame</h1>
+            <div class="music-card col-3">
+                <div class="card-body">
+                    <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                    <div class="card-body">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Uno schifo immondo. Non è vero scherzo sono pigro.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="music-card col-3">
+                <div class="card-body">
+                    <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                    <div class="card-body">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Uno schifo immondo. Non è vero scherzo sono pigro.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="music-card col-3">
+                <div class="card-body">
+                    <img src="assets/mezzanine.jpg" class="img-fluid" alt="Album one">
+                    <div class="card-body">
+                        <h5 class="music-card-title">Mezzanine</h5>
+                        <p class="music-card-text">Uno schifo immondo. Non è vero scherzo sono pigro.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section id="tapestry">
+        <div class="container collapse show py-5;">
+            <div class="row justify-content-center py-5 gy-0 gx-0">
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+                <div style="width: 18rem;">
+                    <img class="img-fluid" src="assets/black-holes-and-revelations.jpg" alt="Card image cap">
+                </div>
+
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
